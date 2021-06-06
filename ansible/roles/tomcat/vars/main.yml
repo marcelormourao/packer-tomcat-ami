@@ -1,0 +1,4 @@
+---
+# vars file for tomcat
+openjdk_name: openjdk-8-jdk
+tomcat_version: 8.5.66
