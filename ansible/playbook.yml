@@ -6,3 +6,10 @@
 
   roles:
     - role: 'roles/tomcat'
+    - role: 'roles/certbot'
+    - role: 'roles/swap'
+  
+  tasks:
+    - name: set timezone to America/Fortaleza
+      timezone:
+        name: America/Fortaleza

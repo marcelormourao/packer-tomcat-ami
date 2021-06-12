@@ -1,0 +1,14 @@
+---
+# tasks file for certbot
+- name: Install Certbot
+  apt:
+    update_cache: yes
+    name: certbot
+    state: present
+
+- name: Copy cron job renew
+  template:
+    src: templates/certbot
+    dest: /etc/cron.d/certbot
+    group: root
+    owner: root
